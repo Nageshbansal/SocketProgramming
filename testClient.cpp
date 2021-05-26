@@ -52,7 +52,7 @@ int main(int argc, char *argv[])
          break;
      }
      send(clientSocketID , message , sizeof(message),0);
-     cout<<"Server";
+     cout<<"Server: ";
      recv(clientSocketID,message,sizeof(message),0);
      
      if(!strcmp(message,"exit"))
